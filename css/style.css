@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: helvetica;
+}
+
+#header {
+  background-color: rgb(230, 128, 128);
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+h1 {
+  vertical-align: middle;
+  color: white;
+  font-weight: bold;
+} /* Not needed possibly*/
+
+.row {
+  margin: 10px 20px;
+}
+
+#results {
+  margin: 30px 20px 10px 0px;
+}
+
+.person-row {
+  margin: 10px 0px;
+  padding: 10px;
+  background-color: turquoise;
+  width: 100%;
+  float: left;
+}
+.person-row img {
+  float: left;
+  margin-right: 20px;
+}
+
+.person-info {
+  float: left;
+}
+
+.person-row > button {
+  float: right;
+}

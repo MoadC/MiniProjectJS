@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    
     <title>Mini Project</title>
 </head>
 <body>
-    <div id="header">
+<div id="header">
         <h1>New Fun App</h1>
-    </div>
+</div>
+<div id="main">
     <div class="row">
-        <label for="Gender">Gender</label>
-        <select name="" id="">
+        <label>Gender</label>
+        <select id="gender">
             <option value="A">All</option>
             <option value="M">Male</option>
             <option value="F">Female</option>
@@ -22,10 +23,39 @@
     </div>
     <div class="row">
         <label for="hobby">Hobbies</label>
-        <input type="text">
+        <input type="text" id="hobby">
     </div>
-    <div >
+    <div class="row">
         <button id="SearchBtn">Search</button>
     </div>
+    <div id="results">
+        <div class="person-row">
+            <img src="avatar1.png" alt="" height="50px" width="50px">
+            <div class="person-info">
+                <div>Cata</div>
+                <div>sports,pets,party</div>              
+            </div>
+            <button>Add as friend</button>
+        </div>
+        <div class="person-row">
+            <img src="avatar1.png" alt="" height="50px" width="50px">
+            <div class="person-info">
+                <div>Cata</div>
+                <div>sports,pets,party</div>
+            </div>
+            <button>Add as friend</button>
+        </div>
+        <div class="person-row">
+            <img src="avatar1.png" alt="" height="50px" width="50px">
+            <div class="person-info">
+                <div>Cata</div>
+                <div>sports,pets,party</div>
+            </div>
+            <button>Add as friend</button>
+        </div>
+        
+    </div>
+</div>
+    <script src="js/script.js"></script>
 </body>
 </html>
