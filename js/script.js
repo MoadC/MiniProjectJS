@@ -55,9 +55,16 @@ window.addEventListener('load', function() {
         let resultsHtml = '';
         let len = users.length;
         for (let i = 0; i < len; i++) {
-
-            resultsHtml += ' ' + users[i].name;
-            
+            if(gender == 'A' || gender == users[i].gender) {
+                if(hobby=='' || hobby == users[i].hobby){
+                        resultsHtml += '<div class="person-row">\
+                             <img src="avatar1.png" />\
+                            <dic class="person-info">\
+                            <div>' + users[i].name + '</div>\
+                            <div>' + users[i].hobby + '</div>\
+                            <button>Add as friend </button> </div>'   
+                }        
+            }
         }
 
         results.innerHTML = resultsHtml ;
