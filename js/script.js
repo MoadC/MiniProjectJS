@@ -57,13 +57,13 @@ window.addEventListener('load', function() {
         for (let i = 0; i < len; i++) {
             if(gender == 'A' || gender == users[i].gender) {
                 if(hobby=='' || hobby == users[i].hobby){
-                        resultsHtml += '<div class="person-row">\
-                             <img src="avatar1.png" />\
+                resultsHtml += '<div class="person-row">\
+                            <img src="avatar1.png" />\
                             <dic class="person-info">\
                             <div>' + users[i].name + '</div>\
                             <div>' + users[i].hobby + '</div>\
                             <button>Add as friend </button> </div>'   
-                }        
+                        }        
             }
         }
 
