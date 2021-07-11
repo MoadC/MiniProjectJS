@@ -42,15 +42,14 @@ window.addEventListener('load', function() {
     var results = document.getElementById('results');
 
     function search(){
-
         var hobbyField=document.getElementById('hobby');
         var hobby = hobbyField.value;
-        console.log(hobby);
+        //console.log(hobby);
 
         var genderField=document.getElementById('gender');
         var s = genderField.selectedIndex;
         var gender = genderField.options[s].value;
-        console.log(gender);
+        //console.log(gender);
 
         let resultsHtml = '';
         let len = users.length;
@@ -58,18 +57,23 @@ window.addEventListener('load', function() {
             if(gender == 'A' || gender == users[i].gender) {
                 if(hobby=='' || hobby == users[i].hobby){
                 resultsHtml += '<div class="person-row">\
-                            <img src="avatar1.png" />\
+                            <img src="avatar1.png"/>\
                             <dic class="person-info">\
                             <div>' + users[i].name + '</div>\
                             <div>' + users[i].hobby + '</div>\
-                            <button>Add as friend </button> </div>'   
+                            <button onclick="message()">Add as friend </button> </div>'   
                         }        
             }
-        }
-
+        }        
         results.innerHTML = resultsHtml ;
     }
+    
 
     var searchBtn = document.getElementById('searchBtn');
     searchBtn.addEventListener('click', search);
+
+    
 });
+function message(){
+        window.alert('friend added');
+    }

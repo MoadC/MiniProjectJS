@@ -37,12 +37,13 @@ h1 {
 .person-row img {
   float: left;
   margin-right: 20px;
+  height: 50px;
 }
 
 .person-info {
   float: left;
 }
 
-.test {
+.person-info > button {
   float: right;
 }
